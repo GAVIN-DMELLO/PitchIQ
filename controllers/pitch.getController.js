@@ -1,9 +1,9 @@
-import { writeconditionsDataservice } from '../services/writeConditionsDataService.js';
+import { getconditionsDataservice } from '../services/pitch.getConditionsDataService.js';
 
-export const writeConditionsData = async (req, res) => {
+export const getConditionsData = async (req, res) => {
   try {
     const incomingData = req.body;
-    const serviceResult = await writeconditionsDataservice(incomingData);
+    const serviceResult = await getconditionsDataservice(incomingData);
     
     return res.status(200).json(serviceResult);
   } catch (error) {

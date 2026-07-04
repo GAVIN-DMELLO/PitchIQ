@@ -1,7 +1,7 @@
 import 'dotenv/config';
 
 import express from 'express';
-import dataRouter from './routes/dataRouter.js';
+import dataRouter from './routes/pitch.router.js';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
